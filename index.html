@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dealsmartusa1 — Price Drops & Deals</title>
+<style>
+  :root{
+    --ink:#1b1b1f;
+    --paper:#fbfaf7;
+    --coral:#e8492f;
+    --coral-dark:#c43a23;
+    --line:#e4e1d8;
+    --muted:#6b675f;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    line-height:1.5;
+  }
+  h1,h2,h3{
+    font-family:'Georgia',serif;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    margin:0;
+  }
+  a{color:inherit;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px;}
+
+  header{
+    border-bottom:1px solid var(--line);
+    padding:20px 0;
+  }
+  header .wrap{display:flex;align-items:center;justify-content:space-between;}
+  .logo{
+    font-family:'Georgia',serif;
+    font-weight:700;
+    font-size:1.15rem;
+    letter-spacing:-0.01em;
+  }
+  .logo span{color:var(--coral);}
+  nav a{
+    text-decoration:none;
+    font-size:0.9rem;
+    color:var(--muted);
+    margin-left:24px;
+  }
+  nav a:hover{color:var(--ink);}
+
+  .hero{
+    padding:88px 0 64px;
+    border-bottom:1px solid var(--line);
+  }
+  .eyebrow{
+    display:inline-block;
+    font-size:0.75rem;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    color:var(--coral-dark);
+    background:#fbe4de;
+    padding:5px 11px;
+    border-radius:99px;
+    margin-bottom:22px;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+  }
+  .hero h1{
+    font-size:3.1rem;
+    line-height:1.06;
+    max-width:11ch;
+  }
+  .hero p{
+    margin-top:22px;
+    font-size:1.1rem;
+    color:var(--muted);
+    max-width:46ch;
+  }
+
+  .strip{
+    border-bottom:1px solid var(--line);
+    padding:18px 0;
+    overflow:hidden;
+  }
+  .strip .track{
+    display:flex;
+    gap:48px;
+    font-family:'Georgia',serif;
+    font-size:1rem;
+    white-space:nowrap;
+    color:var(--muted);
+  }
+  .strip .track span{display:flex;align-items:center;gap:10px;}
+  .strip .track span::before{
+    content:"●";
+    color:var(--coral);
+    font-size:0.5rem;
+  }
+
+  .section{padding:64px 0;border-bottom:1px solid var(--line);}
+  .section h2{font-size:1.7rem;margin-bottom:14px;}
+  .section .lede{color:var(--muted);max-width:54ch;margin-bottom:36px;}
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+  }
+  .card{
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:24px;
+    background:#fff;
+  }
+  .card .num{
+    font-family:'Georgia',serif;
+    font-size:0.85rem;
+    color:var(--coral-dark);
+    margin-bottom:10px;
+    display:block;
+  }
+  .card h3{font-size:1.05rem;margin-bottom:8px;}
+  .card p{font-size:0.92rem;color:var(--muted);margin:0;}
+
+  .cta{
+    text-align:center;
+    padding:72px 0;
+  }
+  .cta h2{font-size:2rem;margin-bottom:14px;}
+  .cta p{color:var(--muted);margin-bottom:28px;}
+  .btn{
+    display:inline-block;
+    background:var(--coral);
+    color:#fff;
+    text-decoration:none;
+    padding:13px 28px;
+    border-radius:4px;
+    font-weight:600;
+    font-size:0.95rem;
+    transition:background .15s ease;
+  }
+  .btn:hover{background:var(--coral-dark);}
+
+  footer{
+    padding:32px 0;
+  }
+  footer .wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  footer p{font-size:0.85rem;color:var(--muted);margin:0;}
+  footer .links a{
+    font-size:0.85rem;
+    text-decoration:none;
+    color:var(--muted);
+    margin-left:18px;
+  }
+  footer .links a:hover{color:var(--ink);}
+
+  @media (max-width:760px){
+    .hero h1{font-size:2.2rem;max-width:none;}
+    .grid{grid-template-columns:1fr;}
+    nav a{margin-left:14px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Dealsmart<span>usa1</span></div>
+    <nav>
+      <a href="#what-we-do">What we do</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Daily price drops</span>
+    <h1>We find the deal. You save the cash.</h1>
+    <p>Dealsmartusa1 tracks price drops and standout offers on best-selling products, then posts them — photo, description, and price — so you never have to dig for a discount again.</p>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="track">
+    <span>Price drops, verified daily</span>
+    <span>No spam, no fluff</span>
+    <span>Posted with real prices</span>
+    <span>Curated, not auto-scraped junk</span>
+  </div>
+</div>
+
+<section class="section" id="what-we-do">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lede">Three simple jobs, done consistently, every single day.</p>
+    <div class="grid">
+      <div class="card">
+        <span class="num">Find</span>
+        <h3>We scan for real drops</h3>
+        <p>We track best-selling products across categories and flag genuine price drops worth your attention.</p>
+      </div>
+      <div class="card">
+        <span class="num">Post</span>
+        <h3>We publish the details</h3>
+        <p>Each deal goes out with a clear photo, a short description, and the actual price — no guesswork.</p>
+      </div>
+      <div class="card">
+        <span class="num">Reach</span>
+        <h3>We share where you scroll</h3>
+        <p>Deals posted to our Telegram channel are also shared to TikTok, so you catch them wherever you are.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Never overpay again.</h2>
+    <p>Follow our feed for the deals worth knowing about.</p>
+    <a class="btn" href="#what-we-do">See how it works</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Dealsmartusa1. All rights reserved. — <a href="mailto:goodealz.vik@gmail.com">goodealz.vik@gmail.com</a></p>
+    <div class="links">
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
