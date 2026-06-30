@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TikTok Authorization — Dealsmartusa1</title>
+<style>
+  :root{
+    --ink:#1b1b1f;
+    --paper:#fbfaf7;
+    --coral:#e8492f;
+    --line:#e4e1d8;
+    --muted:#6b675f;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+  }
+  .card{
+    max-width:560px;
+    width:90%;
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:32px;
+    background:#fff;
+  }
+  h1{font-size:1.3rem;margin:0 0 16px;}
+  p{color:var(--muted);font-size:0.95rem;line-height:1.6;}
+  .code-box{
+    background:#f4f2ec;
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:14px;
+    font-family:monospace;
+    font-size:0.85rem;
+    word-break:break-all;
+    margin:16px 0;
+    user-select:all;
+  }
+  .error{color:var(--coral);}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>TikTok Authorization Complete</h1>
+    <p id="instructions">Copy the code below and paste it into your <code>redeem_code.py</code> script to finish connecting your TikTok account.</p>
+    <div class="code-box" id="codeBox">Reading authorization code...</div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    const error = params.get('error');
+    const box = document.getElementById('codeBox');
+
+    if (code) {
+      box.textContent = code;
+    } else if (error) {
+      box.textContent = 'Error: ' + error + ' — ' + (params.get('error_description') || 'no description provided');
+      box.classList.add('error');
+    } else {
+      box.textContent = 'No authorization code found in the URL. Did you arrive here directly without authorizing first?';
+      box.classList.add('error');
+    }
+  </script>
+</body>
+</html>
